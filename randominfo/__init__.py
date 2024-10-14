@@ -269,7 +269,11 @@ def get_address():
 					allAddrs.append(addr[i])
 			except:
 				pass
-		full_addr.append(choice(allAddrs))
+		# Checking that the allAddrs list is not empty before selecting an element
+		if allAddrs:
+			full_addr.append(choice(allAddrs))
+		else:
+			full_addr.append("Information not available")
 	full_addr = dict(zip(addrParam, full_addr))
 	return full_addr
 

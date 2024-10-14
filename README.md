@@ -1,0 +1,2 @@
+# randominfo
+Automation course
